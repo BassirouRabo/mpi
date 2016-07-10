@@ -10,7 +10,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Mot de passe oublié</title>
+        <title>Produit</title>
 
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -20,8 +20,6 @@
 
 <link rel="stylesheet" type="text/css" href="css/color-schemes/core.css" />
 <link rel="stylesheet" type="text/css" href="css/color-schemes/turquoise.css" id="color_scheme" />
-
-
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Shadows+Into+Light" rel="stylesheet" type="text/css" />
@@ -47,7 +45,6 @@
     <body>
 
         <div class="wrapper">
-
             <div class="header">
                 <div class="top">
                     <div class="container">
@@ -170,44 +167,93 @@
 
             <section class="main">
                 
-                <section class="reset_password">
+                <!-- Product content -->
+                <section class="product">
 
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="span6 offset3">
-                                <form onsubmit="return false" enctype="multipart/form-data" action="#" method="post" />
+                    <!-- Product info -->
+                    <section class="product-info">
+                        <div class="container">
+                            <div class="row">
 
-                                    <div class="box">
-                                        <div class="hgroup title">
-                                            <h3>Mot de passe oublié ?</h3>
-                                        </div>
-
-                                        <div class="box-content">
-
-                                            <div class="row-fluid">
-                                                <div class="span12">
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="email">Email</label>
-                                                        <div class="controls">
-                                                            <input class="span12" type="text" id="email" name="email" value="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="span4">
+                                    <div class="product-images">
+                                        <div class="box">
+                                            <div class="primary">
+                                                <img src="img/thumbnails/db_file_img_228_480xauto.jpg" data-zoom-image="img/thumbnails/db_file_img_228_640xauto.jpg" alt="Chaser Overalls" />
                                             </div>
-                                        </div>
 
-                                        <div class="buttons">
-                                            <button class="btn btn-primary btn-small" type="submit" name="password_restore" value="Submit">
-                                                Reset mot de passe
-                                            </button>                                            
+
                                         </div>
                                     </div>
-                                </form>		
+                                </div>
+
+                                <div class="span8">
+                                    
+                                    <div class="product-content">
+                                        <div class="box">
+
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#product" data-toggle="tab">
+                                                        <i class="icon-reorder icon-large"></i>
+                                                        <span class="hidden-phone">Produit</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#description" data-toggle="tab">
+                                                        <i class="icon-info-sign icon-large"></i>
+                                                        <span class="hidden-phone">Détail</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+
+                                            
+                                            <div class="tab-content">
+                                                
+                                                <div class="tab-pane active" id="product">
+                                                    <form enctype="multipart/form-data" action="#" method="post"/>
+                                                        
+                                                        <div class="details">
+                                                            <h1>Mackbook pro </h1>
+
+                                                            <div class="prices"><span class="price">900.000</span></div>
+
+                                                        </div>
+
+                                                        <div class="short-description">
+                                                            Ordinateur mackbook pro cor 17 2015 retina
+                                                        </div>
+
+                                                        <div class="add-to-cart">
+                                                            <button class="btn btn-primary btn-large">
+                                                                <i class="icon-plus"></i> &nbsp; Ajouter au panier
+                                                            </button>
+                                                        </div>
+                                                    </form>						
+                                                </div>
+
+                                                <div class="tab-pane" id="description">
+                                                    <p><span>Une longue description du produit ici</span><br/><br/>
+                                                        <span>Couleur grise</span>
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>                                            
+
+                                        </div>
+                                        
+                                    </div>                                    
+
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>	
-                </section>                
+                    </section>
+
+                </section>
 
             </section>
 
@@ -315,7 +361,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
     </body>

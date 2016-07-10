@@ -10,7 +10,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Mot de passe oublié</title>
+        <title>Paiement</title>
 
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -20,6 +20,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/color-schemes/core.css" />
 <link rel="stylesheet" type="text/css" href="css/color-schemes/turquoise.css" id="color_scheme" />
+
 
 
 
@@ -170,44 +171,150 @@
 
             <section class="main">
                 
-                <section class="reset_password">
+                <section class="checkout">
 
 
                     <div class="container">
-                        <div class="row">
-                            <div class="span6 offset3">
-                                <form onsubmit="return false" enctype="multipart/form-data" action="#" method="post" />
-
+                        <form enctype="multipart/form-data" action="#" method="post"/>
+                           
+                            <div class="row">
+                                <div class="span9">
                                     <div class="box">
-                                        <div class="hgroup title">
-                                            <h3>Mot de passe oublié ?</h3>
-                                        </div>
+                                        
 
-                                        <div class="box-content">
+                                        <div id="checkout-content">
+                                            <div class="box-header">
+                                                <h3>Adresse de livraison</h3>
+                                            </div>
 
-                                            <div class="row-fluid">
-                                                <div class="span12">
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="email">Email</label>
-                                                        <div class="controls">
-                                                            <input class="span12" type="text" id="email" name="email" value="" />
+                                            <div class="box-content">
+                                                <div class="row-fluid">
+                                                    <div class="span6">
+                                                        <div class="control-group">
+                                                            <label for="first_name" class="control-label">Nom</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="first_name" id="first_name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label for="last_name" class="control-label">Prénom</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="last_name" id="last_name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label for="email" class="control-label">Email</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="email" id="email" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label for="phone" class="control-label">Téléphone</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="phone" id="phone" />
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="buttons">
-                                            <button class="btn btn-primary btn-small" type="submit" name="password_restore" value="Submit">
-                                                Reset mot de passe
-                                            </button>                                            
-                                        </div>
+                                                    <div class="span6">
+                                                        <div class="control-group">
+                                                            <label for="company" class="control-label">Compagnie</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="company" id="company" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label for="street_address"
+                                                                   class="control-label">Adresse</label>
+                                                            <div class="controls">
+                                                                <input class="span12" type="text" value="" name="street_address" id="street_address" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row-fluid">
+                                                            <div class="span6">
+                                                                <div class="control-group">
+                                                                    <label for="city"
+                                                                           class="control-label">Ville</label>
+                                                                    <div class="controls">
+                                                                        <input class="span12" type="text" value="" name="city" id="city" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6">
+                                                                <div class="control-group">
+                                                                    <label for="zip" class="control-label">BP</label>
+                                                                    <div class="controls">
+                                                                        <input class="span12" type="text" value="" name="zip" id="zip" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row-fluid">
+                                                            <div class="span6">
+                                                                <div class="control-group">
+                                                                    <label for="country"
+                                                                           class="control-label">Ville</label>
+                                                                    <div class="controls">
+                                                                        <select class="span12" id="country" name="country">
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="span6">
+                                                                <div class="control-group">
+                                                                    <label for="state"
+                                                                           class="control-label">Pays</label>
+                                                                    <div class="controls">
+                                                                        <div id="states">
+                                                                            <select class="span12" id="state" name="state">                                                                                
+                                                                            </select>							
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>	
+                                            </div>
+
+                                            <div class="box-footer">
+                                                <div class="pull-left">
+                                                    <a href="panier.html" class="btn btn-small">
+                                                        <i class="icon-chevron-left"></i> &nbsp; Retour au panier
+                                                    </a>
+                                                </div>
+
+                                                <div class="pull-right">                                                    
+                                                    <button type="submit" class="btn btn-primary">
+                                                        Valider &nbsp; <i class="icon-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>					
+                                        </div>	
+
                                     </div>
-                                </form>		
+                                </div>
+
+                                <div class="span3">                                    
+                                    <div class="box">
+    <div id="checkout-totals">
+        <div class="hgroup title">
+            <h3>Total commande</h3>
+        </div>
+        <ul class="price-list">
+            <li>Prix initial: <strong>247.000</strong></li>
+            <li>Envoie: <strong>£0.00</strong></li>
+            <li>TVA: <strong>0.00</strong></li>
+            <li class="important">Total: <strong>247.000</strong></li>
+        </ul>
+    </div>
+</div>                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>	
-                </section>                
+                </section>
 
             </section>
 
