@@ -6,11 +6,11 @@
 
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<meta name="author" content="La Boutique HTML v1.0" />
+        <meta name="author" content="APKode.net"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Contact Us</title>
+        <title>Mot de passe oublié</title>
 
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -18,14 +18,8 @@
 <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
 
-<!-- Comment following two lines to use LESS -->
 <link rel="stylesheet" type="text/css" href="css/color-schemes/core.css" />
 <link rel="stylesheet" type="text/css" href="css/color-schemes/turquoise.css" id="color_scheme" />
-
-<!-- Uncomment following three lines to use LESS -->
-<!--<link rel="stylesheet/less" type="text/css" href="css/less/core.less">
-<link rel="stylesheet/less" type="text/css" href="css/less/turquoise.less" id="color_scheme" >
-<script src="js/less.js" type="text/javascript"></script>-->
 
 
 
@@ -48,7 +42,6 @@
 <script type="text/javascript" src="js/imagesloaded.js"></script>
 <script type="text/javascript" src="js/la_boutique.js"></script>
 
-<!--preview only-->
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body>
@@ -65,7 +58,7 @@
                             <div class="span6 hidden-phone">
                                 <ul class="inline pull-right">
                                     <li>
-                                        <a href="connexion.html" title="Connexion">Connexion</a>
+                                        <a href="connexion.php" title="Connexion">Connexion</a>
                                     </li>
                                 </ul>
                             </div>
@@ -106,7 +99,7 @@
                                     <div class="span2">
 
                                         <div class="mini-cart">
-                                            <a href="panier.html" title="Go to cart &rarr;">
+                                            <a href="panier.php" title="Go to cart &rarr;">
                                                 <span>3</span>
                                             </a>
                                         </div>
@@ -132,19 +125,19 @@
                                         <a href="/" title="Accueil" class="title">Accueil</a>
                                     </li>
                                     <li>
-                                        <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                        <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                                     </li>
                                     <li>
-                                        <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                        <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                                     </li>
                                     <li>
-                                        <a href="departements.html" title="Département" class="title">Département</a>
+                                        <a href="departements.php" title="Département" class="title">Département</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                        <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="Contact" class="title">Contact</a>
+                                        <a href="contact.php" title="Contact" class="title">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -175,112 +168,48 @@
                 </div>
             </nav>
 
-            <!-- Content section -->		
             <section class="main">
                 
-                <!-- Static page 1 -->
-                <section class="static_page_1">
+                <section class="reset_password">
 
 
                     <div class="container">
                         <div class="row">
-                            <div class="span12">
-                                <section class="static-page">
-                                    <div class="row-fluid">
+                            <div class="span6 offset3">
+                                <form onsubmit="return false" enctype="multipart/form-data" action="#" method="post" />
 
+                                    <div class="box">
+                                        <div class="hgroup title">
+                                            <h3>Mot de passe oublié ?</h3>
+                                        </div>
 
-                                        <div class="span12">
-                                            <div class="content">
+                                        <div class="box-content">
 
-                                                <div class="row-fluid">
-                                                    <div class="span4">
-                                                        <h5><em class="icon-map-marker icon-larger"></em> Adresse</h5>
-
-                                                        <p>Boulevard Mali Béro - Ex Kalao <br>Boutique Annexe: derrière
-                                                            Camping <br> BP12797 <br>Niamey, NIGER</p>
-                                                    </div>
-                                                    <div class="span4">
-                                                        <h5><em class="icon-phone icon-larger"></em> Téléphone</h5>
-
-                                                        <p><strong>(+227) 20 35 23 23</strong></p>
-                                                    </div>
-                                                    <div class="span4">
-                                                        <h5><em class="icon-mail-forward icon-larger"></em> Support</h5>
-
-                                                        <p>mellplus@mellplusniger.com</p>
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <div class="control-group">
+                                                        <label class="control-label" for="email">Email</label>
+                                                        <div class="controls">
+                                                            <input class="span12" type="text" id="email" name="email" value="" />
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <hr />
-
-                                                <form id="form" enctype="multipart/form-data" action="#" method="post" />
-
-                                                    <div class="row-fluid">
-                                                        <div class="span6">
-                                                            <div class="control-group">
-                                                                <label for="nom" class="control-label">Name</label>
-                                                                <div class="controls">
-                                                                    <input type="text" name="nom" id="nom" value=""
-                                                                           class="span12"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="span6">
-                                                            <div class="control-group">
-                                                                <label for="email" class="control-label">Email</label>
-                                                                <div class="controls">
-                                                                    <input type="text" name="email" id="email" value="" class="span12" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row-fluid">
-                                                        <div class="span12">
-                                                            <div class="control-group">
-                                                                <label for="objet" class="control-label">Subject</label>
-                                                                <div class="controls">
-                                                                    <input type="text" name="objet" id="objet" value=""
-                                                                           class="span12"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="row-fluid">
-                                                        <div class="span12">
-                                                            <div class="control-group">
-                                                                <label for="message" class="control-label">Message</label>
-                                                                <div class="controls">
-                                                                    <textarea name="message" id="message" class="span12"></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row-fluid">
-                                                        <div class="span12">
-                                                            <button class="btn btn-primary">
-                                                                Envoyer
-                                                            </button>
-                                                        </div>
-                                                    </div>
-
-                                                </form>							
                                             </div>
                                         </div>
+
+                                        <div class="buttons">
+                                            <button class="btn btn-primary btn-small" type="submit" name="password_restore" value="Submit">
+                                                Reset mot de passe
+                                            </button>                                            
+                                        </div>
                                     </div>
-                                </section>
+                                </form>		
                             </div>
                         </div>
-                    </div>
-
-
-                </section>    
+                    </div>	
+                </section>                
 
             </section>
-
 
             <div class="footer">
                 <div class="container">
@@ -292,20 +221,20 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell
+                                        <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell
                                             Plus</a>
                                     </li>
                                     <li>
-                                        <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                        <a href="prestations.php" title="prestation" class="title">Prestations</a>
                                     </li>
                                     <li>
-                                        <a href="departements.html" title="Départements" class="title">Departements</a>
+                                        <a href="departements.php" title="Départements" class="title">Departements</a>
                                     </li>
                                     <li>
                                         <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="Contact" class="title">Contact</a>
+                                        <a href="contact.php" title="Contact" class="title">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -321,19 +250,19 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="boutique.html" title="Laptop">Laptop</a>
+                                        <a href="boutique.php" title="Laptop">Laptop</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Apple">Apple</a>
+                                        <a href="boutique.php" title="Apple">Apple</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Réseau">Réseau</a>
+                                        <a href="boutique.php" title="Réseau">Réseau</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                        <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                        <a href="boutique.php" title="Sécurité">Sécurité</a>
                                     </li>
                                 </ul>
                             </div>
@@ -346,7 +275,7 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="connexion.html" title="Connexion">Connexion</a>
+                                        <a href="connexion.php" title="Connexion">Connexion</a>
                                     </li>
                                     <li>
                                         <a href="inscription.html" title="Inscription">Inscription</a>
@@ -376,7 +305,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="credits">
                 <div class="container">

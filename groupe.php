@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Connexion / Inscription</title>
+    <title>Groupe</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
@@ -58,7 +58,7 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +98,7 @@
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.html" title="Go to cart &rarr;">
+                                    <a href="panier.php" title="Go to cart &rarr;">
                                         <span>3</span>
                                     </a>
                                 </div>
@@ -124,19 +124,19 @@
                                 <a href="/" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
-                                <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Département" class="title">Département</a>
+                                <a href="departements.php" title="Département" class="title">Département</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -167,170 +167,57 @@
         </div>
     </nav>
 
+
     <section class="main">
 
-        <section class="login_register">
+        <!-- Static page 1 -->
+        <section class="static_page_1">
 
 
             <div class="container">
                 <div class="row">
-                    <div class="span6">
-                        <div class="login">
-                            <div class="box">
-                                <form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post"/>
+                    <div class="span12">
+                        <section class="static-page">
+                            <div class="row-fluid">
 
-                                <div class="hgroup title">
-                                    <h3>Connexion</h3>
-                                </div>
+                                <div class="span12">
+                                    <div class="content">
 
-                                <div class="box-content">
-                                    <div class="row-fluid">
-                                        <div class="span6">
-                                            <div class="control-group">
-                                                <label class="control-label" for="login_email">Email</label>
+                                        <h1>Qui sommes-nous ?</h1>
 
-                                                <div class="controls">
-                                                    <input class="span12" id="login_email" type="text" name="email"
-                                                           value=""/>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p>MELL PLUS INFORMATIQUE est née de l’ambition d’apporter les solutions
+                                            adéquates à aux besoins informatiques exigés par l’environnement
+                                            professionnel. De 5 employés à l’ouverture le 20 mai 2005 nous sommes
+                                            aujourd’hui 17 agents repartis sur 2 sites avec pour seule vocation de tenir
+                                            votre informatique à jour. </p>
 
-                                        <div class="span6">
-                                            <div class="control-group">
-                                                <label class="control-label" for="login_password">Mot de passe</label>
+                                        <hr>
+                                        <h3>Nos Attouts</h3>
 
-                                                <div class="controls">
-                                                    <input class="span12" id="login_password" type="password"
-                                                           name="password"/>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p>SAV composante à part entière de tout rapport, le SAV est pour nous le
+                                            prolongement de la même prestation. Tout achat vous donne droit au service
+                                            correspondant pour assurer la mailleur exploiattion de vos acquisitions.</p>
+
+                                        <hr>
+                                        <h3>Nos Services</h3>
+
+                                        <p>MELL PLUS INFORMATIQUE offre tous les métiers liés à l'informatique avec en
+                                            Plus le souci permanent de vous offrir les dernières techinques dans ce
+                                            domaine en perpétuelle évolution. l'informatique est le secteur des
+                                            révolutions de part sa nature à l'innovation permanente mais aussi du fait
+                                            du dynamisme et de l'exigence des utilisateurs.</p>
+
                                     </div>
                                 </div>
-
-                                <div class="buttons">
-                                    <div class="pull-left">
-                                        <button type="submit" class="btn btn-primary btn-small" name="login"
-                                                value="Login">
-                                            Connexion
-                                        </button>
-                                        <a href="reset-password.html" class="btn btn-small">
-                                            Mot de passe oublié
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <input type="hidden" name="redirect" value="/"/>
-
-                                </form>
                             </div>
-                        </div>
-
+                        </section>
                     </div>
-
-                    <div class="span6">
-                        <div class="register">
-                            <div class="box">
-                                <div class="hgroup title">
-                                    <h3>Créer un compte</h3>
-                                </div>
-
-                                <div class="buttons">
-                                    <div class="pull-left">
-                                        <a href="#register" class="btn btn-small" data-toggle="modal">
-                                            Inscription &nbsp; <i class="icon-chevron-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="register" class="modal hide fade" tabindex="-1">
-
-                    <form onsubmit="return false;" enctype="multipart/form-data" action="#" method="post"/>
-
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <div class="hgroup title">
-                            <h3>Inscription</h3>
-                        </div>
-                    </div>
-
-                    <div class="modal-body">
-
-                        <div class="row-fluid">
-                            <div class="span6">
-                                <div class="control-group">
-                                    <label class="control-label" for="first_name">Nom</label>
-
-                                    <div class="controls">
-                                        <input class="span12" type="text" id="first_name" name="first_name" value=""/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="span6">
-                                <div class="control-group">
-                                    <label class="control-label" for="last_name">Prénom</label>
-
-                                    <div class="controls">
-                                        <input class="span12" type="text" id="last_name" name="last_name" value=""/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <div class="control-group">
-                                    <label class="control-label" for="email">Email</label>
-
-                                    <div class="controls">
-                                        <input class="span12" type="text" id="email" name="email" value=""/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row-fluid">
-                            <div class="span6">
-                                <div class="control-group">
-                                    <label class="control-label" for="password">Password</label>
-
-                                    <div class="controls">
-                                        <input class="span12" type="password" id="password" name="password"
-                                               autocomplete="off"/>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="span6">
-                                <div class="control-group">
-                                    <label class="control-label" for="password_confirm">Password confirm</label>
-
-                                    <div class="controls">
-                                        <input class="span12" type="password" id="password_confirm"
-                                               name="password_confirm" autocomplete="off"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary btn-small" name="signup" value="Register">
-                            Inscription &nbsp; <i class="icon-ok"></i>
-                        </button>
-                    </div>
-
-                    </form>
                 </div>
             </div>
 
+
         </section>
+        <!-- End Static page 1 -->
 
     </section>
 
@@ -344,19 +231,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
+                                <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                <a href="prestations.php" title="prestation" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Départements" class="title">Departements</a>
+                                <a href="departements.php" title="Départements" class="title">Departements</a>
                             </li>
                             <li>
                                 <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -372,19 +259,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="boutique.html" title="Laptop">Laptop</a>
+                                <a href="boutique.php" title="Laptop">Laptop</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Apple">Apple</a>
+                                <a href="boutique.php" title="Apple">Apple</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Réseau">Réseau</a>
+                                <a href="boutique.php" title="Réseau">Réseau</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                <a href="boutique.php" title="Sécurité">Sécurité</a>
                             </li>
                         </ul>
                     </div>
@@ -397,7 +284,7 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                             <li>
                                 <a href="inscription.html" title="Inscription">Inscription</a>
@@ -437,6 +324,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 </body>

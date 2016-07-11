@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Groupe</title>
+    <title>Panier </title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
@@ -43,7 +43,8 @@
     <script type="text/javascript" src="js/la_boutique.js"></script>
 
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
 <body>
 
 <div class="wrapper">
@@ -58,7 +59,7 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +99,7 @@
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.html" title="Go to cart &rarr;">
+                                    <a href="panier.php" title="Go to cart &rarr;">
                                         <span>3</span>
                                     </a>
                                 </div>
@@ -124,19 +125,19 @@
                                 <a href="/" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
-                                <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Département" class="title">Département</a>
+                                <a href="departements.php" title="Département" class="title">Département</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -170,54 +171,142 @@
 
     <section class="main">
 
-        <!-- Static page 1 -->
-        <section class="static_page_1">
-
+        <section class="cart">
 
             <div class="container">
                 <div class="row">
-                    <div class="span12">
-                        <section class="static-page">
-                            <div class="row-fluid">
 
-                                <div class="span12">
-                                    <div class="content">
+                    <div class="span9">
 
-                                        <h1>Qui sommes-nous ?</h1>
+                        <!-- Cart -->
+                        <div class="box">
+                            <form enctype="multipart/form-data" action="paiement.php" method="post"/>
 
-                                        <p>MELL PLUS INFORMATIQUE est née de l’ambition d’apporter les solutions
-                                            adéquates à aux besoins informatiques exigés par l’environnement
-                                            professionnel. De 5 employés à l’ouverture le 20 mai 2005 nous sommes
-                                            aujourd’hui 17 agents repartis sur 2 sites avec pour seule vocation de tenir
-                                            votre informatique à jour. </p>
+                            <div class="box-header">
+                                <h3>Panier</h3>
+                                <h5>Actuellement vous avez <strong>3</strong> produits dans votre panier</h5>
+                            </div>
 
-                                        <hr>
-                                        <h3>Nos Attouts</h3>
+                            <div class="box-content">
+                                <div class="cart-items">
+                                    <table class="styled-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="col_product text-left">Produit</th>
+                                            <th class="col_remove text-right">&nbsp;</th>
+                                            <th class="col_qty text-right">Quantité</th>
+                                            <th class="col_single text-right">Prix</th>
+                                            <th class="col_discount text-right">Remise</th>
+                                            <th class="col_total text-right">Total</th>
+                                        </tr>
+                                        </thead>
 
-                                        <p>SAV composante à part entière de tout rapport, le SAV est pour nous le
-                                            prolongement de la même prestation. Tout achat vous donne droit au service
-                                            correspondant pour assurer la mailleur exploiattion de vos acquisitions.</p>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col_product text-left">
+                                                <div class="image visible-desktop">
+                                                    <a href="produit.php">
+                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
+                                                             alt="Ordinateur accer"/>
+                                                    </a>
+                                                </div>
 
-                                        <hr>
-                                        <h3>Nos Services</h3>
+                                                <h5>
+                                                    <a href="produit.php">Ordinateur accer</a>
+                                                </h5>
 
-                                        <p>MELL PLUS INFORMATIQUE offre tous les métiers liés à l'informatique avec en
-                                            Plus le souci permanent de vous offrir les dernières techinques dans ce
-                                            domaine en perpétuelle évolution. l'informatique est le secteur des
-                                            révolutions de part sa nature à l'innovation permanente mais aussi du fait
-                                            du dynamisme et de l'exigence des utilisateurs.</p>
+                                            </td>
 
-                                    </div>
+                                            <td class="col_remove text-right">
+                                                <a href="#">
+                                                    <i class="icon-trash icon-large"></i>
+                                                </a>
+                                            </td>
+
+                                            <td class="col_qty text-right">
+                                                <input type="text" name="item_quantity[]" value="2"/>
+                                            </td>
+
+                                            <td class="col_single text-right">
+                                                <span class="single-price">43.000</span>
+                                            </td>
+
+                                            <td class="col_discount text-right">
+                                                <span class="discount">0.00</span>
+                                            </td>
+
+                                            <td class="col_total text-right">
+                                                <span class="total-price">87.000</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col_product text-left">
+                                                <div class="image visible-desktop">
+                                                    <a href="produit.php">
+                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
+                                                             alt="Ipad mini"/>
+                                                    </a>
+                                                </div>
+
+                                                <h5>
+                                                    <a href="produit.php">Ipad Mini</a>
+                                                </h5>
+
+                                            </td>
+
+                                            <td class="col_remove text-right">
+                                                <a href="#">
+                                                    <i class="icon-trash icon-large"></i>
+                                                </a>
+                                            </td>
+
+                                            <td class="col_qty text-right">
+                                                <input type="text" name="item_quantity[]" value="2"/>
+                                            </td>
+
+                                            <td class="col_single text-right">
+                                                <span class="single-price">43.000</span>
+                                            </td>
+
+                                            <td class="col_discount text-right">
+                                                <span class="discount">0.00</span>
+                                            </td>
+
+                                            <td class="col_total text-right">
+                                                <span class="total-price">87.000</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        </section>
+
+                            <div class="box-footer">
+                                <div class="pull-left">
+                                    <a href="boutique.php" class="btn btn-small">
+                                        <i class="icon-chevron-left"></i> &nbsp; Continuer l'achat
+                                    </a>
+                                </div>
+
+                                <div class="pull-right">
+
+                                    <button type="submit" name="checkout" value="1"
+                                            class="btn btn-primary btn-small mm20">
+                                        Paiement &nbsp; <i class="icon-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+
+
                     </div>
+
+
                 </div>
             </div>
-
-
         </section>
-        <!-- End Static page 1 -->
+        <!-- End Cart container -->
 
     </section>
 
@@ -231,19 +320,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
+                                <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                <a href="prestations.php" title="prestation" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Départements" class="title">Departements</a>
+                                <a href="departements.php" title="Départements" class="title">Departements</a>
                             </li>
                             <li>
                                 <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -259,19 +348,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="boutique.html" title="Laptop">Laptop</a>
+                                <a href="boutique.php" title="Laptop">Laptop</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Apple">Apple</a>
+                                <a href="boutique.php" title="Apple">Apple</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Réseau">Réseau</a>
+                                <a href="boutique.php" title="Réseau">Réseau</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                <a href="boutique.php" title="Sécurité">Sécurité</a>
                             </li>
                         </ul>
                     </div>
@@ -284,7 +373,7 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                             <li>
                                 <a href="inscription.html" title="Inscription">Inscription</a>

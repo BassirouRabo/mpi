@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Panier </title>
+    <title>Connexion / Inscription</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
@@ -43,8 +43,7 @@
     <script type="text/javascript" src="js/la_boutique.js"></script>
 
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 
 <div class="wrapper">
@@ -59,7 +58,7 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                         </ul>
                     </div>
@@ -99,7 +98,7 @@
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.html" title="Go to cart &rarr;">
+                                    <a href="panier.php" title="Go to cart &rarr;">
                                         <span>3</span>
                                     </a>
                                 </div>
@@ -125,19 +124,19 @@
                                 <a href="/" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
-                                <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Département" class="title">Département</a>
+                                <a href="departements.php" title="Département" class="title">Département</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -168,145 +167,169 @@
         </div>
     </nav>
 
-
     <section class="main">
 
-        <section class="cart">
+        <section class="login_register">
+
 
             <div class="container">
                 <div class="row">
+                    <div class="span6">
+                        <div class="login">
+                            <div class="box">
+                                <form action="backend/connexion.php" method="post">
 
-                    <div class="span9">
+                                <div class="hgroup title">
+                                    <h3>Connexion</h3>
+                                </div>
 
-                        <!-- Cart -->
-                        <div class="box">
-                            <form enctype="multipart/form-data" action="paiement.html" method="post"/>
+                                <div class="box-content">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <div class="control-group">
+                                                <label class="control-label" for="login_email">Email</label>
 
-                            <div class="box-header">
-                                <h3>Panier</h3>
-                                <h5>Actuellement vous avez <strong>3</strong> produits dans votre panier</h5>
-                            </div>
-
-                            <div class="box-content">
-                                <div class="cart-items">
-                                    <table class="styled-table">
-                                        <thead>
-                                        <tr>
-                                            <th class="col_product text-left">Produit</th>
-                                            <th class="col_remove text-right">&nbsp;</th>
-                                            <th class="col_qty text-right">Quantité</th>
-                                            <th class="col_single text-right">Prix</th>
-                                            <th class="col_discount text-right">Remise</th>
-                                            <th class="col_total text-right">Total</th>
-                                        </tr>
-                                        </thead>
-
-                                        <tbody>
-                                        <tr>
-                                            <td class="col_product text-left">
-                                                <div class="image visible-desktop">
-                                                    <a href="produit.html">
-                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
-                                                             alt="Ordinateur accer"/>
-                                                    </a>
+                                                <div class="controls">
+                                                    <input class="span12" id="login_email" type="email" name="email"
+                                                           required="required"/>
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <h5>
-                                                    <a href="produit.html">Ordinateur accer</a>
-                                                </h5>
+                                        <div class="span6">
+                                            <div class="control-group">
+                                                <label class="control-label" for="login_password">Mot de passe</label>
 
-                                            </td>
-
-                                            <td class="col_remove text-right">
-                                                <a href="#">
-                                                    <i class="icon-trash icon-large"></i>
-                                                </a>
-                                            </td>
-
-                                            <td class="col_qty text-right">
-                                                <input type="text" name="item_quantity[]" value="2"/>
-                                            </td>
-
-                                            <td class="col_single text-right">
-                                                <span class="single-price">43.000</span>
-                                            </td>
-
-                                            <td class="col_discount text-right">
-                                                <span class="discount">0.00</span>
-                                            </td>
-
-                                            <td class="col_total text-right">
-                                                <span class="total-price">87.000</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_product text-left">
-                                                <div class="image visible-desktop">
-                                                    <a href="produit.html">
-                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
-                                                             alt="Ipad mini"/>
-                                                    </a>
+                                                <div class="controls">
+                                                    <input class="span12" id="login_password" type="password"
+                                                           name="password" required="required"/>
                                                 </div>
-
-                                                <h5>
-                                                    <a href="produit.html">Ipad Mini</a>
-                                                </h5>
-
-                                            </td>
-
-                                            <td class="col_remove text-right">
-                                                <a href="#">
-                                                    <i class="icon-trash icon-large"></i>
-                                                </a>
-                                            </td>
-
-                                            <td class="col_qty text-right">
-                                                <input type="text" name="item_quantity[]" value="2"/>
-                                            </td>
-
-                                            <td class="col_single text-right">
-                                                <span class="single-price">43.000</span>
-                                            </td>
-
-                                            <td class="col_discount text-right">
-                                                <span class="discount">0.00</span>
-                                            </td>
-
-                                            <td class="col_total text-right">
-                                                <span class="total-price">87.000</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="buttons">
+                                    <div class="pull-left">
+                                        <button type="submit" class="btn btn-primary btn-small" name="login"
+                                                value="Login">Connexion
+                                        </button>
+                                        <a href="reset-password.php" class="btn btn-small">
+                                            Mot de passe oublié
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="redirect" value="/"/>
+
+                                </form>
                             </div>
-
-                            <div class="box-footer">
-                                <div class="pull-left">
-                                    <a href="boutique.html" class="btn btn-small">
-                                        <i class="icon-chevron-left"></i> &nbsp; Continuer l'achat
-                                    </a>
-                                </div>
-
-                                <div class="pull-right">
-
-                                    <button type="submit" name="checkout" value="1"
-                                            class="btn btn-primary btn-small mm20">
-                                        Paiement &nbsp; <i class="icon-chevron-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            </form>
                         </div>
-
 
                     </div>
 
+                    <div class="span6">
+                        <div class="register">
+                            <div class="box">
+                                <div class="hgroup title">
+                                    <h3>Créer un compte</h3>
+                                </div>
 
+                                <div class="buttons">
+                                    <div class="pull-left">
+                                        <a href="#register" class="btn btn-small" data-toggle="modal">
+                                            Inscription &nbsp; <i class="icon-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="register" class="modal hide fade" tabindex="-1">
+
+                    <form action="backend/inscription.php" method="post">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="hgroup title">
+                            <h3>Inscription</h3>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="nom">Nom</label>
+
+                                    <div class="controls">
+                                        <input class="span12" type="text" id="nom" name="nom"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="prenom">Prénom</label>
+
+                                    <div class="controls">
+                                        <input class="span12" type="text" id="prenom" name="prenom"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="control-group">
+                                    <label class="control-label" for="email">Email</label>
+
+                                    <div class="controls">
+                                        <input class="span12" type="text" id="email" name="email" value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="password">Password</label>
+
+                                    <div class="controls">
+                                        <input class="span12" type="password" id="password" name="password"
+                                               autocomplete="off"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="password_confirm">Password confirm</label>
+
+                                    <div class="controls">
+                                        <input class="span12" type="password" id="password_confirm"
+                                               name="password_confirm" autocomplete="off"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-small" name="signup" value="Register">
+                            Inscription &nbsp; <i class="icon-ok"></i>
+                        </button>
+                    </div>
+
+                    </form>
                 </div>
             </div>
+
         </section>
-        <!-- End Cart container -->
 
     </section>
 
@@ -320,19 +343,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
+                                <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                <a href="prestations.php" title="prestation" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Départements" class="title">Departements</a>
+                                <a href="departements.php" title="Départements" class="title">Departements</a>
                             </li>
                             <li>
                                 <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -348,19 +371,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="boutique.html" title="Laptop">Laptop</a>
+                                <a href="boutique.php" title="Laptop">Laptop</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Apple">Apple</a>
+                                <a href="boutique.php" title="Apple">Apple</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Réseau">Réseau</a>
+                                <a href="boutique.php" title="Réseau">Réseau</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                <a href="boutique.php" title="Sécurité">Sécurité</a>
                             </li>
                         </ul>
                     </div>
@@ -373,7 +396,7 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                             <li>
                                 <a href="inscription.html" title="Inscription">Inscription</a>
@@ -413,7 +436,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 </body>

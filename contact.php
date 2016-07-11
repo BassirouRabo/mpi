@@ -6,11 +6,11 @@
 
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-        <meta name="author" content="APKode.net"/>
+<meta name="author" content="La Boutique HTML v1.0" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Paiement</title>
+<title>Contact Us</title>
 
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -18,9 +18,14 @@
 <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
 
+<!-- Comment following two lines to use LESS -->
 <link rel="stylesheet" type="text/css" href="css/color-schemes/core.css" />
 <link rel="stylesheet" type="text/css" href="css/color-schemes/turquoise.css" id="color_scheme" />
 
+<!-- Uncomment following three lines to use LESS -->
+<!--<link rel="stylesheet/less" type="text/css" href="css/less/core.less">
+<link rel="stylesheet/less" type="text/css" href="css/less/turquoise.less" id="color_scheme" >
+<script src="js/less.js" type="text/javascript"></script>-->
 
 
 
@@ -43,6 +48,7 @@
 <script type="text/javascript" src="js/imagesloaded.js"></script>
 <script type="text/javascript" src="js/la_boutique.js"></script>
 
+<!--preview only-->
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body>
@@ -59,7 +65,7 @@
                             <div class="span6 hidden-phone">
                                 <ul class="inline pull-right">
                                     <li>
-                                        <a href="connexion.html" title="Connexion">Connexion</a>
+                                        <a href="connexion.php" title="Connexion">Connexion</a>
                                     </li>
                                 </ul>
                             </div>
@@ -100,7 +106,7 @@
                                     <div class="span2">
 
                                         <div class="mini-cart">
-                                            <a href="panier.html" title="Go to cart &rarr;">
+                                            <a href="panier.php" title="Go to cart &rarr;">
                                                 <span>3</span>
                                             </a>
                                         </div>
@@ -126,19 +132,19 @@
                                         <a href="/" title="Accueil" class="title">Accueil</a>
                                     </li>
                                     <li>
-                                        <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                        <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                                     </li>
                                     <li>
-                                        <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                        <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                                     </li>
                                     <li>
-                                        <a href="departements.html" title="Département" class="title">Département</a>
+                                        <a href="departements.php" title="Département" class="title">Département</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                        <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="Contact" class="title">Contact</a>
+                                        <a href="contact.php" title="Contact" class="title">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -169,154 +175,112 @@
                 </div>
             </nav>
 
+            <!-- Content section -->		
             <section class="main">
                 
-                <section class="checkout">
+                <!-- Static page 1 -->
+                <section class="static_page_1">
 
 
                     <div class="container">
-                        <form enctype="multipart/form-data" action="#" method="post"/>
-                           
-                            <div class="row">
-                                <div class="span9">
-                                    <div class="box">
-                                        
+                        <div class="row">
+                            <div class="span12">
+                                <section class="static-page">
+                                    <div class="row-fluid">
 
-                                        <div id="checkout-content">
-                                            <div class="box-header">
-                                                <h3>Adresse de livraison</h3>
-                                            </div>
 
-                                            <div class="box-content">
+                                        <div class="span12">
+                                            <div class="content">
+
                                                 <div class="row-fluid">
-                                                    <div class="span6">
-                                                        <div class="control-group">
-                                                            <label for="first_name" class="control-label">Nom</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="first_name" id="first_name" />
+                                                    <div class="span4">
+                                                        <h5><em class="icon-map-marker icon-larger"></em> Adresse</h5>
+
+                                                        <p>Boulevard Mali Béro - Ex Kalao <br>Boutique Annexe: derrière
+                                                            Camping <br> BP12797 <br>Niamey, NIGER</p>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h5><em class="icon-phone icon-larger"></em> Téléphone</h5>
+
+                                                        <p><strong>(+227) 20 35 23 23</strong></p>
+                                                    </div>
+                                                    <div class="span4">
+                                                        <h5><em class="icon-mail-forward icon-larger"></em> Support</h5>
+
+                                                        <p>mellplus@mellplusniger.com</p>
+                                                    </div>
+                                                </div>
+                                                <hr />
+
+                                                <form id="form" enctype="multipart/form-data" action="#" method="post" />
+
+                                                    <div class="row-fluid">
+                                                        <div class="span6">
+                                                            <div class="control-group">
+                                                                <label for="nom" class="control-label">Name</label>
+                                                                <div class="controls">
+                                                                    <input type="text" name="nom" id="nom" value=""
+                                                                           class="span12"/>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="control-group">
-                                                            <label for="last_name" class="control-label">Prénom</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="last_name" id="last_name" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="control-group">
-                                                            <label for="email" class="control-label">Email</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="email" id="email" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="control-group">
-                                                            <label for="phone" class="control-label">Téléphone</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="phone" id="phone" />
+
+                                                        <div class="span6">
+                                                            <div class="control-group">
+                                                                <label for="email" class="control-label">Email</label>
+                                                                <div class="controls">
+                                                                    <input type="text" name="email" id="email" value="" class="span12" />
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
-                                                    <div class="span6">
-                                                        <div class="control-group">
-                                                            <label for="company" class="control-label">Compagnie</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="company" id="company" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="control-group">
-                                                            <label for="street_address"
-                                                                   class="control-label">Adresse</label>
-                                                            <div class="controls">
-                                                                <input class="span12" type="text" value="" name="street_address" id="street_address" />
+                                                    <div class="row-fluid">
+                                                        <div class="span12">
+                                                            <div class="control-group">
+                                                                <label for="objet" class="control-label">Subject</label>
+                                                                <div class="controls">
+                                                                    <input type="text" name="objet" id="objet" value=""
+                                                                           class="span12"/>
+                                                                </div>
                                                             </div>
                                                         </div>
 
-                                                        <div class="row-fluid">
-                                                            <div class="span6">
-                                                                <div class="control-group">
-                                                                    <label for="city"
-                                                                           class="control-label">Ville</label>
-                                                                    <div class="controls">
-                                                                        <input class="span12" type="text" value="" name="city" id="city" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="span6">
-                                                                <div class="control-group">
-                                                                    <label for="zip" class="control-label">BP</label>
-                                                                    <div class="controls">
-                                                                        <input class="span12" type="text" value="" name="zip" id="zip" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="row-fluid">
-                                                            <div class="span6">
-                                                                <div class="control-group">
-                                                                    <label for="country"
-                                                                           class="control-label">Ville</label>
-                                                                    <div class="controls">
-                                                                        <select class="span12" id="country" name="country">
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="span6">
-                                                                <div class="control-group">
-                                                                    <label for="state"
-                                                                           class="control-label">Pays</label>
-                                                                    <div class="controls">
-                                                                        <div id="states">
-                                                                            <select class="span12" id="state" name="state">                                                                                
-                                                                            </select>							
-                                                                        </div>
-                                                                    </div>
+                                                    </div>
+
+                                                    <div class="row-fluid">
+                                                        <div class="span12">
+                                                            <div class="control-group">
+                                                                <label for="message" class="control-label">Message</label>
+                                                                <div class="controls">
+                                                                    <textarea name="message" id="message" class="span12"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>	
+
+                                                    <div class="row-fluid">
+                                                        <div class="span12">
+                                                            <button class="btn btn-primary">
+                                                                Envoyer
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>							
                                             </div>
-
-                                            <div class="box-footer">
-                                                <div class="pull-left">
-                                                    <a href="panier.html" class="btn btn-small">
-                                                        <i class="icon-chevron-left"></i> &nbsp; Retour au panier
-                                                    </a>
-                                                </div>
-
-                                                <div class="pull-right">                                                    
-                                                    <button type="submit" class="btn btn-primary">
-                                                        Valider &nbsp; <i class="icon-chevron-right"></i>
-                                                    </button>
-                                                </div>
-                                            </div>					
-                                        </div>	
-
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="span3">                                    
-                                    <div class="box">
-    <div id="checkout-totals">
-        <div class="hgroup title">
-            <h3>Total commande</h3>
-        </div>
-        <ul class="price-list">
-            <li>Prix initial: <strong>247.000</strong></li>
-            <li>Envoie: <strong>£0.00</strong></li>
-            <li>TVA: <strong>0.00</strong></li>
-            <li class="important">Total: <strong>247.000</strong></li>
-        </ul>
-    </div>
-</div>                                </div>
+                                </section>
                             </div>
-                        </form>
-                    </div>	
-                </section>
+                        </div>
+                    </div>
+
+
+                </section>    
 
             </section>
+
 
             <div class="footer">
                 <div class="container">
@@ -328,20 +292,20 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell
+                                        <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell
                                             Plus</a>
                                     </li>
                                     <li>
-                                        <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                        <a href="prestations.php" title="prestation" class="title">Prestations</a>
                                     </li>
                                     <li>
-                                        <a href="departements.html" title="Départements" class="title">Departements</a>
+                                        <a href="departements.php" title="Départements" class="title">Departements</a>
                                     </li>
                                     <li>
                                         <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html" title="Contact" class="title">Contact</a>
+                                        <a href="contact.php" title="Contact" class="title">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -357,19 +321,19 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="boutique.html" title="Laptop">Laptop</a>
+                                        <a href="boutique.php" title="Laptop">Laptop</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Apple">Apple</a>
+                                        <a href="boutique.php" title="Apple">Apple</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Réseau">Réseau</a>
+                                        <a href="boutique.php" title="Réseau">Réseau</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                        <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                                     </li>
                                     <li>
-                                        <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                        <a href="boutique.php" title="Sécurité">Sécurité</a>
                                     </li>
                                 </ul>
                             </div>
@@ -382,7 +346,7 @@
 
                                 <ul class="links">
                                     <li>
-                                        <a href="connexion.html" title="Connexion">Connexion</a>
+                                        <a href="connexion.php" title="Connexion">Connexion</a>
                                     </li>
                                     <li>
                                         <a href="inscription.html" title="Inscription">Inscription</a>
@@ -412,6 +376,7 @@
                     </div>
                 </div>
             </div>
+
 
             <div class="credits">
                 <div class="container">

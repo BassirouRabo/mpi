@@ -1,3 +1,11 @@
+<?php
+session_start();
+try {
+    $bdd = new PDO("pgsql:host=localhost;dbname=mpi", "postgres", "demo");
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-js">
 
@@ -58,7 +66,13 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +112,7 @@
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.html" title="Go to cart &rarr;">
+                                    <a href="panier.php" title="Go to cart &rarr;">
                                         <span>3</span>
                                     </a>
                                 </div>
@@ -124,19 +138,19 @@
                                 <a href="/" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
-                                <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Département" class="title">Département</a>
+                                <a href="departements.php" title="Département" class="title">Département</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -274,177 +288,38 @@
                     <div class="row">
                         <div class="span9">
                             <ul class="product-list isotope">
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Ipad Mini">
+                                <?php
+                                $reponse = $bdd->query('SELECT * FROM produit') or die(print_r($bdd->errorInfo()));
 
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
+                                while ($donnees = $reponse->fetch()) {
+                                    ?>
+                                    <li class="standard" data-price="<?php echo $donnees['prix']; ?>">
+                                        <a href="produit.php?ref=<?php echo $donnees['id']; ?>"
+                                           title="<?php echo $donnees['nom']; ?>">
 
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">700.00</span>
+                                            <div class="image">
+                                                <img class="primary"
+                                                     src="img/produits/<?php echo $donnees['image']; ?>.jpg"
+                                                     alt="<?php echo $donnees['nom']; ?>"/>
+                                                <img class="secondary"
+                                                     src="img/produits/<?php echo $donnees['image']; ?>.jpg"
+                                                     alt="<?php echo $donnees['nom']; ?>"/>
                                             </div>
-                                            <h3>Ipad Mini</h3>
-                                        </div>
 
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Iphone 6">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
+                                            <div class="title">
+                                                <div class="prices">
+                                                    <span class="price"><?php echo $donnees['prix']; ?> CFA</span>
+                                                </div>
+                                                <h3><?php echo $donnees['nom']; ?></h3>
                                             </div>
-                                            <h3>Iphone 6</h3>
-                                        </div>
 
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Macbook Pro">
+                                        </a>
+                                    </li>
 
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Macbook Pro</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="product.html" title="Samsung Grand II">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Samsung Grand II</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Iphone Plus">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Iphone Plus</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Imac 2014">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Imac 2014</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Ipad Mini">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">700.00</span>
-                                            </div>
-                                            <h3>Ipad Mini</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Iphone 6">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Iphone 6</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
-                                <li class="standard" data-price="70">
-                                    <a href="boutique.html" title="Macbook Pro">
-
-                                        <div class="image">
-                                            <img class="primary" src="img/thumbnails/db_file_img_92_640xauto.jpg"
-                                                 alt=""/>
-                                            <img class="secondary" src="img/thumbnails/db_file_img_93_640xauto.jpg"
-                                                 alt=""/>
-                                        </div>
-
-                                        <div class="title">
-                                            <div class="prices">
-                                                <span class="price">70.00</span>
-                                            </div>
-                                            <h3>Macbook Pro</h3>
-                                        </div>
-
-                                    </a>
-                                </li>
+                                    <?php
+                                }
+                                $reponse->closeCursor();
+                                ?>
                             </ul>
                         </div>
 
@@ -453,88 +328,88 @@
                                 <h3 class="widget-title widget-title ">Categories</h3>
                                 <ul>
                                     <li>
-                                        <a href='boutique.html' class="title">Laptop</a>
+                                        <a href='boutique.php' class="title">Laptop</a>
 
                                         <ul>
                                             <li>
-                                                <a href='boutique.html' class="title">Samsung</a>
+                                                <a href='boutique.php' class="title">Samsung</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Toshiba</a>
+                                                <a href='boutique.php' class="title">Toshiba</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Dell</a>
+                                                <a href='boutique.php' class="title">Dell</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Le Novo</a>
+                                                <a href='boutique.php' class="title">Le Novo</a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <a href='boutique.html' class="title">Apple</a>
+                                        <a href='boutique.php' class="title">Apple</a>
 
                                         <ul>
                                             <li>
-                                                <a href='boutique.html' class="title">Mackbook Pro 17</a>
+                                                <a href='boutique.php' class="title">Mackbook Pro 17</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Mackbook Pro i5</a>
+                                                <a href='boutique.php' class="title">Mackbook Pro i5</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Iphone</a>
+                                                <a href='boutique.php' class="title">Iphone</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Ipad Retina</a>
+                                                <a href='boutique.php' class="title">Ipad Retina</a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <a href='boutique.html' class="title">Réseau</a>
+                                        <a href='boutique.php' class="title">Réseau</a>
 
                                         <ul>
                                             <li>
-                                                <a href='boutique.html' class="title">Serveur</a>
+                                                <a href='boutique.php' class="title">Serveur</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Routeur</a>
+                                                <a href='boutique.php' class="title">Routeur</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Switch</a>
+                                                <a href='boutique.php' class="title">Switch</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Connecteur</a>
+                                                <a href='boutique.php' class="title">Connecteur</a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <a href='boutique.html' class="title">Sécurité</a>
+                                        <a href='boutique.php' class="title">Sécurité</a>
 
                                         <ul>
                                             <li>
-                                                <a href='boutique.html' class="title">Camera</a>
+                                                <a href='boutique.php' class="title">Camera</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Antivol</a>
+                                                <a href='boutique.php' class="title">Antivol</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Antivirus</a>
+                                                <a href='boutique.php' class="title">Antivirus</a>
                                             </li>
 
                                         </ul>
                                     </li>
 
                                     <li>
-                                        <a href='boutique.html' class="title">Consommable</a>
+                                        <a href='boutique.php' class="title">Consommable</a>
 
                                         <ul>
                                             <li>
-                                                <a href='boutique.html' class="title">Imprimante</a>
+                                                <a href='boutique.php' class="title">Imprimante</a>
                                             </li>
                                             <li>
-                                                <a href='boutique.html' class="title">Photocopieuse</a>
+                                                <a href='boutique.php' class="title">Photocopieuse</a>
                                             </li>
 
                                         </ul>
@@ -565,19 +440,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
+                                <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                <a href="prestations.php" title="prestation" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Départements" class="title">Departements</a>
+                                <a href="departements.php" title="Départements" class="title">Departements</a>
                             </li>
                             <li>
                                 <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -593,19 +468,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="boutique.html" title="Laptop">Laptop</a>
+                                <a href="boutique.php" title="Laptop">Laptop</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Apple">Apple</a>
+                                <a href="boutique.php" title="Apple">Apple</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Réseau">Réseau</a>
+                                <a href="boutique.php" title="Réseau">Réseau</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                <a href="boutique.php" title="Sécurité">Sécurité</a>
                             </li>
                         </ul>
                     </div>
@@ -618,10 +493,14 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
-                            </li>
-                            <li>
-                                <a href="inscription.html" title="Inscription">Inscription</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
+
                             </li>
                         </ul>
                     </div>

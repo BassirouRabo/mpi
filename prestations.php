@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Département | Mell Plus Informatique</title>
+    <title>Prestations | Mell Plus Informatique</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
@@ -58,7 +58,7 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +98,7 @@
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.html" title="Go to cart &rarr;">
+                                    <a href="panier.php" title="Go to cart &rarr;">
                                         <span>3</span>
                                     </a>
                                 </div>
@@ -124,19 +124,19 @@
                                 <a href="/" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
-                                <a href="groupe.html" title="La société" class="title">Groupe mellplus</a>
+                                <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="Prestations" class="title">Prestations</a>
+                                <a href="prestations.php" title="Prestations" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Département" class="title">Département</a>
+                                <a href="departements.php" title="Département" class="title">Département</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -147,15 +147,15 @@
                             Go to&hellip;
                             <option value="/"/>
                             Accueil
-                            <option value="groupe.html"/>
+                            <option value="groupe.php"/>
                             Groupe mellplus
-                            <option value="prestations.html"/>
+                            <option value="prestations.php"/>
                             Prestations
-                            <option value="departement.html"/>
+                            <option value="departement.php"/>
                             Département
-                            <option value="boutique.html"/>
+                            <option value="boutique.php"/>
                             Boutique
-                            <option value="contact.html"/>
+                            <option value="contact.php"/>
                             Contact
                         </select>
                     </div>
@@ -186,11 +186,11 @@
                                         <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
-                                        <h3>Technique</h3>
+                                        <h3>Formation</h3>
                                     </div>
 
                                     <div class="box-content">
-                                        <p>Présentation département commercial</p>
+                                        <p>Présentation département Formation</p>
                                     </div>
 
                                 </div>
@@ -202,11 +202,11 @@
                                         <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
-                                        <h3>Administratif</h3>
+                                        <h3>Matériel informatique</h3>
                                     </div>
 
                                     <div class="box-content">
-                                        <p>Présentation département administratif</p>
+                                        <p>Présentation département vente</p>
                                     </div>
 
                                 </div>
@@ -218,11 +218,11 @@
                                         <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
-                                        <h3>Commercial</h3>
+                                        <h3>Energie</h3>
                                     </div>
 
                                     <div class="box-content">
-                                        <p>Présentation département commercial</p>
+                                        <p>Présentation département énergie</p>
                                     </div>
 
                                 </div>
@@ -234,11 +234,11 @@
                                         <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
-                                        <h3>Administratif</h3>
+                                        <h3>Immobilier</h3>
                                     </div>
 
                                     <div class="box-content">
-                                        <p>Présentation département support</p>
+                                        <p>Présentation département immobilier</p>
                                     </div>
 
                                 </div>
@@ -252,13 +252,10 @@
                         <div class="widget Menu">
                             <h3 class="widget-title widget-title ">Nos marques</h3>
                             <ul class='menu-widget'>
-                                <li class="level1"><a href="boutique.html" title="Trends" class="title">Smasung</a></li>
-                                <li class="level1"><a href="boutique.html" title="Get the look" class="title">Accer</a>
-                                </li>
-                                <li class="level1"><a href="boutique.html" title="Miscellaneous"
-                                                      class="title">Toshiba</a></li>
-                                <li class="level1"><a href="boutique.html" title="New collection"
-                                                      class="title">Apple</a></li>
+                                <li class="level1"><a href="#" title="Smasung" class="title">Smasung</a></li>
+                                <li class="level1"><a href="#" title="Accer" class="title">Accer</a></li>
+                                <li class="level1"><a href="#" title="Toshiba" class="title">Toshiba</a></li>
+                                <li class="level1"><a href="#" title="Apple" class="title">Apple</a></li>
                             </ul>
                         </div>
 
@@ -281,19 +278,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="groupe.html" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
+                                <a href="groupe.php" title="Groupe Mell Plus" class="title">Groupe Mell Plus</a>
                             </li>
                             <li>
-                                <a href="prestations.html" title="prestation" class="title">Prestations</a>
+                                <a href="prestations.php" title="prestation" class="title">Prestations</a>
                             </li>
                             <li>
-                                <a href="departements.html" title="Départements" class="title">Departements</a>
+                                <a href="departements.php" title="Départements" class="title">Departements</a>
                             </li>
                             <li>
-                                <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
+                                <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                             </li>
                             <li>
-                                <a href="contact.html" title="Contact" class="title">Contact</a>
+                                <a href="contact.php" title="Contact" class="title">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -309,19 +306,19 @@
 
                         <ul class="links">
                             <li>
-                                <a href="boutique.html" title="Laptop">Laptop</a>
+                                <a href="boutique.php" title="Laptop">Laptop</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Apple">Apple</a>
+                                <a href="boutique.php" title="Apple">Apple</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Réseau">Réseau</a>
+                                <a href="boutique.php" title="Réseau">Réseau</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Téléphonie">Téléphonie</a>
+                                <a href="boutique.php" title="Téléphonie">Téléphonie</a>
                             </li>
                             <li>
-                                <a href="boutique.html" title="Sécurité">Sécurité</a>
+                                <a href="boutique.php" title="Sécurité">Sécurité</a>
                             </li>
                         </ul>
                     </div>
@@ -334,7 +331,7 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.html" title="Connexion">Connexion</a>
+                                <a href="connexion.php" title="Connexion">Connexion</a>
                             </li>
                             <li>
                                 <a href="inscription.html" title="Inscription">Inscription</a>
