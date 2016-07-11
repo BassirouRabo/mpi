@@ -1,3 +1,21 @@
+<?php
+session_start();
+try {
+    $bdd = new PDO("pgsql:host=localhost;dbname=mpi", "postgres", "demo");
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+$donnees = null;
+$reponse = null;
+
+if (isset($_GET['ref']) AND $_GET['ref'] != null) {
+    strip_tags($_POST['ref']);
+    $reponse = $bdd->prepare('SELECT * FROM commande_tampon WHERE reference = :reference');
+    $reponse->execute(array('reference' => $_GET['ref'])) or die(print_r($bdd->errorInfo()));
+    $donnees = $reponse->fetch();
+}
+
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-js">
 
@@ -59,7 +77,13 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.php" title="Connexion">Connexion</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +124,6 @@
 
                                 <div class="mini-cart">
                                     <a href="panier.php" title="Go to cart &rarr;">
-                                        <span>3</span>
                                     </a>
                                 </div>
 
@@ -148,15 +171,15 @@
                             Go to&hellip;
                             <option value="/"/>
                             Accueil
-                            <option value="groupe.html"/>
+                            <option value="groupe.php"/>
                             Groupe mellplus
-                            <option value="prestations.html"/>
+                            <option value="prestations.php"/>
                             Prestations
-                            <option value="departement.html"/>
+                            <option value="departement.php"/>
                             Département
-                            <option value="boutique.html"/>
+                            <option value="boutique.php"/>
                             Boutique
-                            <option value="contact.html"/>
+                            <option value="contact.php"/>
                             Contact
                         </select>
                     </div>
@@ -178,124 +201,99 @@
 
                     <div class="span9">
 
-                        <!-- Cart -->
                         <div class="box">
-                            <form enctype="multipart/form-data" action="paiement.php" method="post"/>
+                            <form action="backend/validation.php" method="post">
 
                             <div class="box-header">
                                 <h3>Panier</h3>
-                                <h5>Actuellement vous avez <strong>3</strong> produits dans votre panier</h5>
                             </div>
 
-                            <div class="box-content">
-                                <div class="cart-items">
-                                    <table class="styled-table">
-                                        <thead>
-                                        <tr>
-                                            <th class="col_product text-left">Produit</th>
-                                            <th class="col_remove text-right">&nbsp;</th>
-                                            <th class="col_qty text-right">Quantité</th>
-                                            <th class="col_single text-right">Prix</th>
-                                            <th class="col_discount text-right">Remise</th>
-                                            <th class="col_total text-right">Total</th>
-                                        </tr>
-                                        </thead>
+                                <?php
+                                if ($donnees != null) {
+                                    ?>
+                                    <div class="box-content">
+                                        <div class="cart-items">
 
-                                        <tbody>
-                                        <tr>
-                                            <td class="col_product text-left">
-                                                <div class="image visible-desktop">
-                                                    <a href="produit.php">
-                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
-                                                             alt="Ordinateur accer"/>
-                                                    </a>
-                                                </div>
+                                            <table class="styled-table">
+                                                <thead>
+                                                <tr>
+                                                    <th class="col_product text-left">Produit</th>
+                                                    <th class="col_remove text-right">Supprimer</th>
+                                                    <th class="col_single text-right">Prix</th>
+                                                    <th class="col_discount text-right">TVA</th>
+                                                    <th class="col_total text-right">Total</th>
+                                                </tr>
+                                                </thead>
 
-                                                <h5>
-                                                    <a href="produit.php">Ordinateur accer</a>
-                                                </h5>
+                                                <tbody>
+                                                <?php
+                                                while ($donnees = $reponse->fetch()) {
 
-                                            </td>
+                                                    $reponseP = $bdd->prepare('SELECT * FROM produit WHERE id = :id');
+                                                    $reponseP->execute(array('id' => $donnees['produit_id'])) or die(print_r($bdd->errorInfo()));
+                                                    $donneesP = $reponseP->fetch();
 
-                                            <td class="col_remove text-right">
-                                                <a href="#">
-                                                    <i class="icon-trash icon-large"></i>
-                                                </a>
-                                            </td>
+                                                    if ($reponseP->rowCount() == 1) {
+                                                        ?>
+                                                        <tr>
+                                                            <td class="col_product text-left">
 
-                                            <td class="col_qty text-right">
-                                                <input type="text" name="item_quantity[]" value="2"/>
-                                            </td>
+                                                                <h5>
+                                                                    <a href="produit.php"><?php echo $donneesP['nom']; ?></a>
+                                                                </h5>
 
-                                            <td class="col_single text-right">
-                                                <span class="single-price">43.000</span>
-                                            </td>
+                                                            </td>
 
-                                            <td class="col_discount text-right">
-                                                <span class="discount">0.00</span>
-                                            </td>
+                                                            <td class="col_remove text-right">
+                                                                <a href="backend/commande-delete.php?ref=<?php echo $donneesP['id']; ?>">
+                                                                    <i class="icon-trash icon-large"></i>
+                                                                </a>
+                                                            </td>
 
-                                            <td class="col_total text-right">
-                                                <span class="total-price">87.000</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="col_product text-left">
-                                                <div class="image visible-desktop">
-                                                    <a href="produit.php">
-                                                        <img src="img/thumbnails/db_file_img_230_60xauto.jpg"
-                                                             alt="Ipad mini"/>
-                                                    </a>
-                                                </div>
+                                                            <td class="col_single text-right">
+                                                                <span
+                                                                    class="single-price"><?php echo $donneesP['prix']; ?></span>
+                                                            </td>
 
-                                                <h5>
-                                                    <a href="produit.php">Ipad Mini</a>
-                                                </h5>
+                                                            <td class="col_discount text-right">
+                                                                <span
+                                                                    class="discount"><?php echo $donneesP['tva']; ?></span>
+                                                            </td>
 
-                                            </td>
+                                                            <td class="col_total text-right">
+                                                                <span
+                                                                    class="total-price"><?php echo $donneesP['prix']; ?></span>
+                                                            </td>
+                                                        </tr>
+                                                        <?php
+                                                    }
+                                                }
+                                                ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
 
-                                            <td class="col_remove text-right">
-                                                <a href="#">
-                                                    <i class="icon-trash icon-large"></i>
-                                                </a>
-                                            </td>
+                                    <div class="box-footer">
+                                        <div class="pull-left">
+                                            <a href="boutique.php" class="btn btn-small">
+                                                <i class="icon-chevron-left"></i> &nbsp; Continuer l'achat
+                                            </a>
+                                        </div>
 
-                                            <td class="col_qty text-right">
-                                                <input type="text" name="item_quantity[]" value="2"/>
-                                            </td>
+                                        <div class="pull-right">
 
-                                            <td class="col_single text-right">
-                                                <span class="single-price">43.000</span>
-                                            </td>
-
-                                            <td class="col_discount text-right">
-                                                <span class="discount">0.00</span>
-                                            </td>
-
-                                            <td class="col_total text-right">
-                                                <span class="total-price">87.000</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                            <button type="submit" name="checkout" value="1"
+                                                    class="btn btn-primary btn-small mm20">Valider la commande &nbsp; <i
+                                                    class="icon-chevron-right"></i>
+                                            </button>
+                                        </div>
                                 </div>
-                            </div>
+                                    <?php
+                                }
+                                ?>
 
-                            <div class="box-footer">
-                                <div class="pull-left">
-                                    <a href="boutique.php" class="btn btn-small">
-                                        <i class="icon-chevron-left"></i> &nbsp; Continuer l'achat
-                                    </a>
-                                </div>
 
-                                <div class="pull-right">
-
-                                    <button type="submit" name="checkout" value="1"
-                                            class="btn btn-primary btn-small mm20">
-                                        Paiement &nbsp; <i class="icon-chevron-right"></i>
-                                    </button>
-                                </div>
-                            </div>
                             </form>
                         </div>
 
@@ -373,10 +371,13 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.php" title="Connexion">Connexion</a>
-                            </li>
-                            <li>
-                                <a href="inscription.html" title="Inscription">Inscription</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>

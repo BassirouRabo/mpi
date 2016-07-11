@@ -1,3 +1,11 @@
+<?php
+session_start();
+try {
+    $bdd = new PDO("pgsql:host=localhost;dbname=mpi", "postgres", "demo");
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-js">
 
@@ -101,7 +109,6 @@
 
                                         <div class="mini-cart">
                                             <a href="panier.php" title="Go to cart &rarr;">
-                                                <span>3</span>
                                             </a>
                                         </div>
 
@@ -338,7 +345,7 @@
                                         <a href="departements.php" title="Départements" class="title">Departements</a>
                                     </li>
                                     <li>
-                                        <a href="boutiques.html" title="Boutique" class="title">Boutique</a>
+                                        <a href="boutique.php" title="Boutique" class="title">Boutique</a>
                                     </li>
                                     <li>
                                         <a href="contact.php" title="Contact" class="title">Contact</a>

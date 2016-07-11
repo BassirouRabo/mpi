@@ -107,7 +107,6 @@
 
                                         <div class="mini-cart">
                                             <a href="panier.php" title="Go to cart &rarr;">
-                                                <span>3</span>
                                             </a>
                                         </div>
 

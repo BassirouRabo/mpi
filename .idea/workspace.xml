@@ -1,23 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbac65d1-bdaa-40e5-b142-06d666edf900" name="Default" comment="pages html">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/produits/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/connexion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/deconnexion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/inscription.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/boutique.html" afterPath="$PROJECT_DIR$/boutique.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/connexion.html" afterPath="$PROJECT_DIR$/connexion.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/departements.html" afterPath="$PROJECT_DIR$/departements.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/groupe.html" afterPath="$PROJECT_DIR$/groupe.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/paiement.html" afterPath="$PROJECT_DIR$/paiement.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/panier.html" afterPath="$PROJECT_DIR$/panier.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prestations.html" afterPath="$PROJECT_DIR$/prestations.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/produit.html" afterPath="$PROJECT_DIR$/produit.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/reset-password.html" afterPath="$PROJECT_DIR$/reset-password.php" />
+    <list default="true" id="fbac65d1-bdaa-40e5-b142-06d666edf900" name="Default" comment="boutique, produit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/prestations/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/commande-add.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/commande-delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/validation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/validation.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog-post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grids.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/resources/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/resources/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/resources/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_107_60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_10_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_122_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_123_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_132_60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_137_60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_137_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_138_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_151_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_152_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_155_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_159_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_175_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_17_60xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_227_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_228_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_228_480xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_229_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_230_60xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_261_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_265_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_269_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_273_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_274_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_32_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_32_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_33_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_34_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_34_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_35_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_39_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_42_60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_42_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_43_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_44_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_44_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_45_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_48_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_48_60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_48_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_49_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_57_160xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_87_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_88_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_92_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_93_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_97_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_98_640xauto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/retina-ready-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store-locator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/typography.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/thumbnails/db_file_img_272_640xauto.jpg" afterPath="$PROJECT_DIR$/img/departements/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boutique.php" afterPath="$PROJECT_DIR$/boutique.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/connexion.php" afterPath="$PROJECT_DIR$/backend/connexion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/deconnexion.php" afterPath="$PROJECT_DIR$/backend/deconnexion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/departements.php" afterPath="$PROJECT_DIR$/departements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupe.php" afterPath="$PROJECT_DIR$/groupe.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paiement.php" afterPath="$PROJECT_DIR$/paiement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/panier.php" afterPath="$PROJECT_DIR$/panier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prestations.php" afterPath="$PROJECT_DIR$/prestations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produit.php" afterPath="$PROJECT_DIR$/produit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/color-schemes/turquoise.css" afterPath="$PROJECT_DIR$/css/color-schemes/turquoise.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mpi.iws" />
@@ -85,6 +150,60 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="commande_tampon" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="commande" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="client" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="mpi.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="categorie" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -95,111 +214,7 @@
     <favorites_list name="mpi" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="connexion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/connexion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6666665">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="32" />
-              <folding>
-                <marker date="1468254810498" expanded="true" signature="374:440" placeholder="SELECT * FRO..client..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-137.33333">
-              <caret line="299" column="94" selection-start-line="299" selection-start-column="94" selection-end-line="299" selection-end-column="94" />
-              <folding>
-                <element signature="n#section#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1468263103996" expanded="true" signature="11990:12011" placeholder="SELECT * FRO..produit..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="boutique.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boutique.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="95.55556">
-              <caret line="202" column="65" selection-start-line="202" selection-start-column="65" selection-end-line="202" selection-end-column="65" />
-              <folding>
-                <element signature="e#11857#13191#0#PHP" expanded="false" />
-                <marker date="1468265215108" expanded="true" signature="8095:8118" placeholder="SELECT * FRO..categorie..." />
-                <marker date="1468265215108" expanded="true" signature="11429:11475" placeholder="SELECT * FRO..produit..." />
-                <marker date="1468265215108" expanded="true" signature="11686:11707" placeholder="SELECT * FRO..produit..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="departements.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/departements.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5958904">
-              <caret line="157" column="54" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prestations.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prestations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-49.333332">
-              <caret line="283" column="68" selection-start-line="283" selection-start-column="68" selection-end-line="283" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mpi.public.categorie" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.categorie">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="produit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6551723">
-              <caret line="15" column="85" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="85" />
-              <folding>
-                <marker date="1468263870260" expanded="true" signature="302:338" placeholder="SELECT * FRO..produit..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mpi.public.produit" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.produit">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -240,13 +255,24 @@
         <option value="$PROJECT_DIR$/inscription.php" />
         <option value="$PROJECT_DIR$/backend/inscription.php" />
         <option value="$PROJECT_DIR$/connexion.html" />
+        <option value="$PROJECT_DIR$/backend/commande.php" />
         <option value="$PROJECT_DIR$/backend/deconnexion.php" />
         <option value="$PROJECT_DIR$/backend/connexion.php" />
+        <option value="$PROJECT_DIR$/backend/commande-delete.php" />
+        <option value="$PROJECT_DIR$/backend/commande-add.php" />
+        <option value="$PROJECT_DIR$/connexion.php" />
+        <option value="$PROJECT_DIR$/contact.php" />
+        <option value="$PROJECT_DIR$/groupe.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/produit.php" />
+        <option value="$PROJECT_DIR$/paiement.php" />
         <option value="$PROJECT_DIR$/boutique.php" />
+        <option value="$PROJECT_DIR$/produit.php" />
+        <option value="$PROJECT_DIR$/panier.php" />
+        <option value="$PROJECT_DIR$/validation.php" />
+        <option value="$PROJECT_DIR$/backend/validation.php" />
         <option value="$PROJECT_DIR$/departements.php" />
         <option value="$PROJECT_DIR$/prestations.php" />
+        <option value="$PROJECT_DIR$/css/color-schemes/turquoise.css" />
       </list>
     </option>
   </component>
@@ -318,7 +344,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="color-schemes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,6 +396,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/departements" />
+      <recent name="$PROJECT_DIR$/img/prestations" />
       <recent name="$PROJECT_DIR$/img/produits" />
       <recent name="$PROJECT_DIR$/img/thumbnails" />
       <recent name="$PROJECT_DIR$/img/slides" />
@@ -730,7 +790,7 @@
       <workItem from="1468247987992" duration="1457000" />
       <workItem from="1468249696278" duration="353000" />
       <workItem from="1468250498968" duration="1164000" />
-      <workItem from="1468252281485" duration="8803000" />
+      <workItem from="1468252281485" duration="18726000" />
     </task>
     <task id="LOCAL-00001" summary="accueil">
       <created>1468181230269</created>
@@ -744,19 +804,26 @@
       <option name="project" value="LOCAL" />
       <updated>1468188869621</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="boutique, produit">
+      <created>1468265623446</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1468265623446</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22636000" />
+    <option name="totallyTimeSpent" value="32559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -766,7 +833,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16749585" sideWeight="0.49624866" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16749585" sideWeight="0.49624866" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13543394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliTail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -779,7 +846,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -789,38 +855,38 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13543394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliTail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946378" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.50375134" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16749585" sideWeight="0.49624866" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -834,7 +900,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="accueil" />
     <MESSAGE value="pages html" />
-    <option name="LAST_COMMIT_MESSAGE" value="pages html" />
+    <MESSAGE value="boutique, produit" />
+    <option name="LAST_COMMIT_MESSAGE" value="boutique, produit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -844,62 +911,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/inscription.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1468253084710" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="314" column="98" selection-start-line="314" selection-start-column="82" selection-end-line="314" selection-end-column="98" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="282" column="110" selection-start-line="282" selection-start-column="87" selection-end-line="282" selection-end-column="110" />
-          <folding>
-            <element signature="n#section#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1468263103996" expanded="true" signature="11990:12011" placeholder="SELECT * FRO..produit..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468253084710" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1468265611012" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -908,11 +925,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -921,9 +934,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="282" column="110" selection-start-line="282" selection-start-column="87" selection-end-line="282" selection-end-column="110" />
           <folding>
-            <element signature="n#section#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1468263103996" expanded="true" signature="11990:12011" placeholder="SELECT * FRO..produit..." />
+            <marker date="1468271932852" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
           </folding>
         </state>
       </provider>
@@ -941,7 +952,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1468253084710" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1468265611012" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -950,11 +961,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,9 +970,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="282" column="110" selection-start-line="282" selection-start-column="87" selection-end-line="282" selection-end-column="110" />
           <folding>
-            <element signature="n#section#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1468263103996" expanded="true" signature="11990:12011" placeholder="SELECT * FRO..produit..." />
+            <marker date="1468271932852" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
           </folding>
         </state>
       </provider>
@@ -975,11 +980,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/low-price.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/color-schemes/core.css">
@@ -996,39 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/color-schemes/turquoise.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.369863">
-          <caret line="18" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="900" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8522727">
-          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8522727">
-          <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reset-password.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33251533">
@@ -1036,33 +1003,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/panier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1551723">
-          <caret line="181" column="88" selection-start-line="181" selection-start-column="80" selection-end-line="181" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/slides/3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/thumbnails/db_file_img_272_640xauto.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/thumbnails/db_file_img_228_480xauto.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paiement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17926186">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.client">
@@ -1086,43 +1029,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/deconnexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+    <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.categorie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/inscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state vertical-scroll-proportion="-19.333334">
+          <caret line="29" column="0" selection-start-line="21" selection-start-column="3" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1468253084710" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1468265611012" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/deconnexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.061643835">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/commande-delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <marker date="1468271932856" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connexion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.111111">
-          <caret line="179" column="46" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-5.465517">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/connexion.php">
+    <entry file="file://$PROJECT_DIR$/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <marker date="1468254810498" expanded="true" signature="374:440" placeholder="SELECT * FRO..client..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.465517">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.465517">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,50 +1107,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/boutique.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-137.33333">
-          <caret line="299" column="94" selection-start-line="299" selection-start-column="94" selection-end-line="299" selection-end-column="94" />
+        <state vertical-scroll-proportion="-8.379311">
+          <caret line="114" column="91" selection-start-line="114" selection-start-column="82" selection-end-line="114" selection-end-column="91" />
           <folding>
-            <element signature="n#section#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1468263103996" expanded="true" signature="11990:12011" placeholder="SELECT * FRO..produit..." />
+            <marker date="1468272197112" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..categorie..." />
+            <marker date="1468272197112" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
+            <marker date="1468272197112" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paiement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-74.0">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/produit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="15" column="85" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="85" />
+        <state vertical-scroll-proportion="-0.24657534">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <marker date="1468263870260" expanded="true" signature="302:338" placeholder="SELECT * FRO..produit..." />
+            <marker date="1468272435436" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boutique.php">
+    <entry file="file://$PROJECT_DIR$/backend/commande-add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="95.55556">
-          <caret line="202" column="65" selection-start-line="202" selection-start-column="65" selection-end-line="202" selection-end-column="65" />
-          <folding>
-            <element signature="e#11857#13191#0#PHP" expanded="false" />
-            <marker date="1468265215108" expanded="true" signature="8095:8118" placeholder="SELECT * FRO..categorie..." />
-            <marker date="1468265215108" expanded="true" signature="11429:11475" placeholder="SELECT * FRO..produit..." />
-            <marker date="1468265215108" expanded="true" signature="11686:11707" placeholder="SELECT * FRO..produit..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prestations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.333332">
-          <caret line="283" column="68" selection-start-line="283" selection-start-column="68" selection-end-line="283" selection-end-column="68" />
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.categorie">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-72.0">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <marker date="1468271932852" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/afce7051/5ed07dbf-82b3-4b47-a70a-6ebd99ca4303/mpi.public.commande_tampon">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1195,10 +1168,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.37037">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.666667">
+          <caret line="242" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="416" selection-end-column="7" />
+          <folding>
+            <marker date="1468274740492" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..commande_tampon..." />
+            <marker date="1468274740492" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..produit..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.666666">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <marker date="1468274884388" expanded="true" signature="-1:-1" placeholder="UPDATE comma..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/world-shipping.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/ui-slider-handle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/triangle.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/stripe.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/social.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/rarr.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/preloader.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/low-price.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/loader.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/larr.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/glyphicons-halflings-white.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/glyphicons-halflings.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/free-shipping.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/cart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/color-schemes/turquoise.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8289786">
+          <caret line="231" column="23" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prestations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33251533">
+          <caret line="232" column="67" selection-start-line="232" selection-start-column="67" selection-end-line="232" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/departements.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5958904">
-          <caret line="157" column="54" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.33251533">
+          <caret line="232" column="68" selection-start-line="232" selection-start-column="68" selection-end-line="232" selection-end-column="68" />
           <folding />
         </state>
       </provider>

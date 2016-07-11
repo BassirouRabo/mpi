@@ -14,19 +14,25 @@ if (
         die('Erreur : ' . $e->getMessage());
     }
 
-    $reponse = $bdd->prepare('SELECT * FROM client where email = :email AND password = :password ') or header('Location: ../connexion.html');
+    $reponse = $bdd->prepare('SELECT * FROM client where email = :email AND password = :password ') or header('Location: ../connexion.php');
 
     $reponse->execute(array('email' => $_POST['email'], 'password' => $_POST['password']));
+    $donnees = $reponse->fetch();
 
     if ($reponse->rowCount() == 1) {
+
         $_SESSION['admin'] = 'mpi';
+        $_SESSION['client'] = $donnees['id'];
+        $_SESSION['reference'] = rand(1, 999999999999999);
+        $_SESSION['panier'] = 0;
+
         header('Location: ../');
     } else {
-        header('Location: ../connexion.html');
+        header('Location: ../connexion.php');
     }
 
     $reponse->closeCursor();
 
 } else {
-    header('Location: ../connexion.html');
+    header('Location: ../connexion.php');
 }

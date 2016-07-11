@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-js">
 
@@ -10,7 +13,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Groupe</title>
+    <title>Panier </title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
@@ -23,8 +26,9 @@
 
 
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Shadows+Into+Light"
-          rel="stylesheet" type="text/css"/>
+    <link
+        href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Shadows+Into+Light"
+        rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
@@ -43,7 +47,8 @@
     <script type="text/javascript" src="js/la_boutique.js"></script>
 
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
 <body>
 
 <div class="wrapper">
@@ -58,7 +63,13 @@
                     <div class="span6 hidden-phone">
                         <ul class="inline pull-right">
                             <li>
-                                <a href="connexion.php" title="Connexion">Connexion</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>
@@ -146,15 +157,15 @@
                             Go to&hellip;
                             <option value="/"/>
                             Accueil
-                            <option value="groupe.html"/>
+                            <option value="groupe.php"/>
                             Groupe mellplus
-                            <option value="prestations.html"/>
+                            <option value="prestations.php"/>
                             Prestations
-                            <option value="departement.html"/>
+                            <option value="departement.php"/>
                             Département
-                            <option value="boutique.html"/>
+                            <option value="boutique.php"/>
                             Boutique
-                            <option value="contact.html"/>
+                            <option value="contact.php"/>
                             Contact
                         </select>
                     </div>
@@ -169,54 +180,30 @@
 
     <section class="main">
 
-        <!-- Static page 1 -->
-        <section class="static_page_1">
-
+        <section class="cart">
 
             <div class="container">
                 <div class="row">
-                    <div class="span12">
-                        <section class="static-page">
-                            <div class="row-fluid">
 
-                                <div class="span12">
-                                    <div class="content">
+                    <div class="span9">
 
-                                        <h1>Qui sommes-nous ?</h1>
+                        <div class="box">
+                            <form action="backend/validation.php" method="post">
 
-                                        <p>MELL PLUS INFORMATIQUE est née de l’ambition d’apporter les solutions
-                                            adéquates à aux besoins informatiques exigés par l’environnement
-                                            professionnel. De 5 employés à l’ouverture le 20 mai 2005 nous sommes
-                                            aujourd’hui 17 agents repartis sur 2 sites avec pour seule vocation de tenir
-                                            votre informatique à jour. </p>
-
-                                        <hr>
-                                        <h3>Nos Attouts</h3>
-
-                                        <p>SAV composante à part entière de tout rapport, le SAV est pour nous le
-                                            prolongement de la même prestation. Tout achat vous donne droit au service
-                                            correspondant pour assurer la mailleur exploiattion de vos acquisitions.</p>
-
-                                        <hr>
-                                        <h3>Nos Services</h3>
-
-                                        <p>MELL PLUS INFORMATIQUE offre tous les métiers liés à l'informatique avec en
-                                            Plus le souci permanent de vous offrir les dernières techinques dans ce
-                                            domaine en perpétuelle évolution. l'informatique est le secteur des
-                                            révolutions de part sa nature à l'innovation permanente mais aussi du fait
-                                            du dynamisme et de l'exigence des utilisateurs.</p>
-
-                                    </div>
+                                <div class="box-header">
+                                    <h3>Votre commande a été validée</h3>
                                 </div>
-                            </div>
-                        </section>
+
+                            </form>
+                        </div>
+
+
                     </div>
+
+
                 </div>
             </div>
-
-
         </section>
-        <!-- End Static page 1 -->
 
     </section>
 
@@ -283,10 +270,13 @@
 
                         <ul class="links">
                             <li>
-                                <a href="connexion.php" title="Connexion">Connexion</a>
-                            </li>
-                            <li>
-                                <a href="inscription.html" title="Inscription">Inscription</a>
+                                <?php
+                                if (isset($_SESSION['admin']) and $_SESSION['admin'] = 'mpi') {
+                                    echo '<a href="backend/deconnexion.php" title="Deconnexion">Deconnexion</a>';
+                                } else {
+                                    echo '<a href="backend/connexion.php" title="Connexion">Connexion / Inscription</a>';
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>

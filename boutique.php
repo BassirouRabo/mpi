@@ -112,8 +112,8 @@ try {
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.php" title="Go to cart &rarr;">
-                                        <span>3</span>
+                                    <a href="panier.php?ref=<?php echo $_SESSION['reference']; ?> "
+                                       title="Go to cart &rarr;">
                                     </a>
                                 </div>
 

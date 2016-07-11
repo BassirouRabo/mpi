@@ -99,7 +99,6 @@
 
                                 <div class="mini-cart">
                                     <a href="panier.php" title="Go to cart &rarr;">
-                                        <span>3</span>
                                     </a>
                                 </div>
 
@@ -183,7 +182,7 @@
                             <article class="post post-grid">
                                 <div class="box">
                                     <div class="box-image">
-                                        <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
+                                        <img src="img/prestations/1.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
                                         <h3>Formation</h3>
@@ -199,7 +198,7 @@
                             <article class="post post-grid">
                                 <div class="box">
                                     <div class="box-image">
-                                        <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
+                                        <img src="img/prestations/1.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
                                         <h3>Matériel informatique</h3>
@@ -215,7 +214,7 @@
                             <article class="post post-grid">
                                 <div class="box">
                                     <div class="box-image">
-                                        <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
+                                        <img src="img/prestations/1.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
                                         <h3>Energie</h3>
@@ -231,7 +230,7 @@
                             <article class="post post-grid">
                                 <div class="box">
                                     <div class="box-image">
-                                        <img src="img/thumbnails/db_file_img_272_640xauto.jpg" alt="" title=""/>
+                                        <img src="img/prestations/1.jpg" alt="" title=""/>
                                     </div>
                                     <div class="box-header">
                                         <h3>Immobilier</h3>

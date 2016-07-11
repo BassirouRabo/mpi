@@ -122,7 +122,6 @@ if (isset($_GET['ref']) AND $_GET['ref'] != null) {
 
                                 <div class="mini-cart">
                                     <a href="panier.php" title="Go to cart &rarr;">
-                                        <span>3</span>
                                     </a>
                                 </div>
 
@@ -238,7 +237,9 @@ if (isset($_GET['ref']) AND $_GET['ref'] != null) {
                                             <div class="tab-content">
 
                                                 <div class="tab-pane active" id="product">
-                                                    <form enctype="multipart/form-data" action="#" method="post"/>
+                                                    <form action="backend/commande-add.php" method="post">
+                                                        <input type="hidden" name="ref"
+                                                               value="<?php echo $donnees['id']; ?>">
 
                                                     <div class="details">
                                                         <h1><?php echo $donnees['nom']; ?></h1>
