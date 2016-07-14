@@ -1,0 +1,1 @@
+ new PDO('mysql:host=localhost;dbname=mpi;charset=utf8', 'mpi', 'mpi');

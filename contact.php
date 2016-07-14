@@ -104,10 +104,21 @@
                                     </div>
 
                                     <div class="span2">
-
                                         <div class="mini-cart">
-                                            <a href="panier.php" title="Go to cart &rarr;">
-                                            </a>
+                                            <?php
+                                            if (isset($_SESSION['reference'])) {
+                                                ?>
+                                                <a href="panier.php?ref=<?php echo $_SESSION['reference']; ?> "
+                                                   title="Go to cart &rarr;">
+                                                </a>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <a href="connexion.php" title="Connexion"></a>
+                                                <?php
+                                            }
+                                            ?>
+
                                         </div>
 
                                     </div>
@@ -128,7 +139,7 @@
                             <div class="hidden-phone">
                                 <ul class="main-menu">
                                     <li>
-                                        <a href="/" title="Accueil" class="title">Accueil</a>
+                                        <a href="index.php" title="Accueil" class="title">Accueil</a>
                                     </li>
                                     <li>
                                         <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>

@@ -82,7 +82,7 @@ session_start();
                 <div class="row">
                     <div class="span8">
                         <div class="logo">
-                            <a href="/" title="&larr; Accueil">
+                            <a href="index.php" title="&larr; Accueil">
                                 <img src="img/logo.png" alt="Mell Plus Informatique"/>
                             </a>
                         </div>
@@ -109,8 +109,20 @@ session_start();
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.php" title="Go to cart &rarr;">
-                                    </a>
+                                    <?php
+                                    if (isset($_SESSION['reference'])) {
+                                        ?>
+                                        <a href="panier.php?ref=<?php echo $_SESSION['reference']; ?> "
+                                           title="Go to cart &rarr;">
+                                        </a>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <a href="connexion.php" title="Connexion"></a>
+                                        <?php
+                                    }
+                                    ?>
+
                                 </div>
 
                             </div>
@@ -131,7 +143,7 @@ session_start();
                     <div class="hidden-phone">
                         <ul class="main-menu">
                             <li>
-                                <a href="/" title="Accueil" class="title">Accueil</a>
+                                <a href="index.php" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
                                 <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>

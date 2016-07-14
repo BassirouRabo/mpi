@@ -9,7 +9,7 @@ $donnees = null;
 $reponse = null;
 
 if (isset($_GET['ref']) AND $_GET['ref'] != null) {
-    strip_tags($_POST['ref']);
+    strip_tags($_GET['ref']);
     $reponse = $bdd->prepare('SELECT * FROM commande_tampon WHERE reference = :reference');
     $reponse->execute(array('reference' => $_GET['ref'])) or die(print_r($bdd->errorInfo()));
     $donnees = $reponse->fetch();
@@ -96,7 +96,7 @@ if (isset($_GET['ref']) AND $_GET['ref'] != null) {
                 <div class="row">
                     <div class="span8">
                         <div class="logo">
-                            <a href="/" title="&larr; Accueil">
+                            <a href="index.php" title="&larr; Accueil">
                                 <img src="img/logo.png" alt="Mell Plus Informatique"/>
                             </a>
                         </div>
@@ -123,8 +123,20 @@ if (isset($_GET['ref']) AND $_GET['ref'] != null) {
                             <div class="span2">
 
                                 <div class="mini-cart">
-                                    <a href="panier.php" title="Go to cart &rarr;">
-                                    </a>
+                                    <?php
+                                    if (isset($_SESSION['reference'])) {
+                                        ?>
+                                        <a href="panier.php?ref=<?php echo $_SESSION['reference']; ?> "
+                                           title="Go to cart &rarr;">
+                                        </a>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <a href="connexion.php" title="Connexion"></a>
+                                        <?php
+                                    }
+                                    ?>
+
                                 </div>
 
                             </div>
@@ -145,7 +157,7 @@ if (isset($_GET['ref']) AND $_GET['ref'] != null) {
                     <div class="hidden-phone">
                         <ul class="main-menu">
                             <li>
-                                <a href="/" title="Accueil" class="title">Accueil</a>
+                                <a href="index.php" title="Accueil" class="title">Accueil</a>
                             </li>
                             <li>
                                 <a href="groupe.php" title="La société" class="title">Groupe mellplus</a>
